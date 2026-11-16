@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ISBAT University Student ICT Training Centre - programmes, weekly timetable and registration.">
+  <title>Student ICT Training Centre</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <img src="logo.jpg" alt="Training Centre logo" class="logo" width="70" height="70">
+    <h1>Student ICT Training Centre</h1>
+
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#timetable">Timetable</a></li>
+        <li><a href="#registration">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>
+        Explore our training programmes, check the weekly timetable and register
+        for the course that fits your career goals, all in one place.
+      </p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <img src="img_3.jpg" alt="Students working in a computer lab" class="about-image" width="340" height="230">
+      <p>
+        The ISBAT University Student ICT Training Centre is a hands-on learning space
+        where students build practical technology skills alongside their academic
+        studies. Our modern computer labs, reliable internet and up-to-date software
+        let learners practise real tasks instead of only reading about them.
+      </p>
+      <p>
+        Our instructors are experienced industry practitioners who guide students
+        through short, focused programmes. Whether you are starting out or sharpening
+        existing skills, the centre helps you gain confidence, build a portfolio and
+        prepare for the workplace.
+      </p>
+    </section>
+
+    <section id="courses">
+      <h2>Courses</h2>
+
+      <div class="lists">
+        <div class="list-box">
+          <h3>Training Programmes</h3>
+          <ul class="programmes">
+            <li>Web Development</li>
+            <li>Computer Networking</li>
+            <li>Database Management</li>
+            <li>Cybersecurity</li>
+          </ul>
+        </div>
+
+        <div class="list-box">
+          <h3>How to Register</h3>
+          <ol class="steps">
+            <li>Choose the training programme you want to join.</li>
+            <li>Check the weekly timetable to confirm the session times suit you.</li>
+            <li>Fill in the registration form with your details.</li>
+            <li>Submit the form and wait for a confirmation from the centre.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="cards">
+        <article class="card featured">
+          <a class="register-label" href="#registration">Register Now</a>
+          <h3>Web Development</h3>
+          <p>Build responsive websites with HTML5, CSS3 and modern web practices.</p>
+        </article>
+
+        <article class="card">
+          <h3>Computer Networking</h3>
+          <p>Learn how networks are designed, configured, connected and maintained.</p>
+        </article>
+
+        <article class="card">
+          <h3>Database Management</h3>
+          <p>Design, create and query databases to store and manage data reliably.</p>
+        </article>
+
+        <article class="card">
+          <h3>Cybersecurity</h3>
+          <p>Understand common threats and learn how to protect systems and data.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="timetable">
+      <h2>Weekly Timetable</h2>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Time</th>
+              <th scope="col">Course</th>
+              <th scope="col">Instructor</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>10:00 - 12:00</td>
+              <td>Web Development</td>
+              <td>Mr. John Doe</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>14:00 - 16:00</td>
+              <td>Computer Networking</td>
+              <td>Ms. Jane Smith</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>10:00 - 12:00</td>
+              <td>Database Management</td>
+              <td>Mr. Michael Brown</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>14:00 - 16:00</td>
+              <td>Cybersecurity</td>
+              <td>Ms. Sarah Johnson</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="registration">
+      <h2>Registration</h2>
+
+      <form action="#registration" method="post">
+
+        <div class="form-row">
+          <label class="field-label" for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Nakato" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <label class="field-label" for="studentname">Student Name</label>
+          <input type="text" id="studentname" name="studentname" placeholder="Enter your student name" required>
+        </div>
+
+        <div class="form-row">
+          <label class="field-label" for="emailaddress">Email Address</label>
+          <input type="email" id="emailaddress" name="emailaddress" placeholder="Enter your email" autocomplete="email" required>
+        </div>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <div class="options">
+            <label for="male"><input type="radio" id="male" name="gender" value="male" required> Male</label>
+            <label for="female"><input type="radio" id="female" name="gender" value="female"> Female</label>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label class="field-label" for="preferredcourse">Preferred Course</label>
+          <select id="preferredcourse" name="preferredcourse" required>
+            <option value="">Select a course</option>
+            <option value="webdev">Web Development</option>
+            <option value="networking">Computer Networking</option>
+            <option value="database">Database Management</option>
+            <option value="cybersecurity">Cybersecurity</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Study Mode</legend>
+          <div class="options">
+            <label for="fulltime"><input type="radio" id="fulltime" name="studymode" value="fulltime" required> Full-time</label>
+            <label for="parttime"><input type="radio" id="parttime" name="studymode" value="parttime"> Part-time</label>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label class="field-label" for="comments">Additional Comments</label>
+          <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional comments here"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Submit Registration</button>
+          <button type="reset">Reset</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ISBAT University Student ICT Training Centre. All rights reserved.</p>
+    <p>Student ICT Training Centre</p>
+  </footer>
+
+  <a class="back-to-top" href="#top">Back to Top</a>
+</body>
+</html>
